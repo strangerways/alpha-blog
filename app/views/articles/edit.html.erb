@@ -1,4 +1,4 @@
-<h1> create an article </h1>
+<h1> Edit Existing Article </h1>
 
 <% if @article.errors.any? %>
 <h2> The following errors prevented this from doing what it should </h2>
@@ -20,12 +20,8 @@
  </p>
  <p>
    <%= f.submit %>
-   
-   
  </p>
  
+ <% end %>
  
-<% end %>
-
-<%= link_to "Back to Index", articles_path %>
-
+ <%= link_to "Back to Index", articles_path %>
