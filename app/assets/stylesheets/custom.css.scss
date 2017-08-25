@@ -1,4 +1,81 @@
+$navbar-default-bg: #3d3d3d;
 
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  
+}
+
+
+#logo:hover {
+  color: #d6d6d6;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+  
+  
+}
+
+.jumbotron {
+  background-image: asset-url('ohdeer.png');
+  background-size: cover;
+  height: 550px;
+  
+}
+
+.jumbotron h1 {
+  color:#fff;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  
+}
+
+.btn-xlarge {
+  background-color: #3d3d3d;
+  border: none;
+  
+  
+}
+
+.btn-xlarge:hover {
+  background-color: #3d3d3d;
+  border: none;
+  
+}
+
+footer {
+  margin-top: 45px;
+  border-top: 1px solid #d6d6d6;
+  color: #3d3d3d;
+}
+
+footer a:hover {
+  color: #d6d6d6;
+}
+
+footer small {
+  float: left;
+  
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+  
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
