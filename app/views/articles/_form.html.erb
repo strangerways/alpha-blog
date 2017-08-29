@@ -19,6 +19,20 @@
             <%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Description" %>
          </div>
     </div>
+    
+     <div class="form-group">
+       <div class="row">
+         <div class="col-sm-offset-2 col-sm-8">
+           <%= f.collection_check_boxes :category_ids, Category.all, :id, :name do |cb| %>
+           <% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %>
+           <% end %>
+         </div>
+     </div>
+    </div>
+   
+ </div>
+</div>
+    
    <div class="form-group">
      <div class="col-sm-offset-2 col-sm-10">
        <%= f.submit class: 'btn btn-primary btn-lg' %>
@@ -27,8 +41,7 @@
    
  </div>
 </div>
- 
- 
+
 <% end %>
 <div class="col-xs-4 col-xs-offset-2">
 [ <%= link_to "Cancel", articles_path %> ]
